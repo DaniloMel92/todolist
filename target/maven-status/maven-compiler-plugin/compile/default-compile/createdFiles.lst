@@ -1,0 +1,10 @@
+com\dkmo\todolist\todolist\task\Tasks.class
+com\dkmo\todolist\todolist\TodolistApplication.class
+com\dkmo\todolist\todolist\errors\Errors.class
+com\dkmo\todolist\todolist\users\UsersRepository.class
+com\dkmo\todolist\todolist\users\Users.class
+com\dkmo\todolist\todolist\users\UsersController.class
+com\dkmo\todolist\todolist\filter\FilterTask.class
+com\dkmo\todolist\todolist\utils\Utils.class
+com\dkmo\todolist\todolist\task\TaskController.class
+com\dkmo\todolist\todolist\task\TaskRepository.class
