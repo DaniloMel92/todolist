@@ -1,7 +1,6 @@
 HELP.md
-/target
-*.jar
-*.original
+
+
 ### STS ###
 .apt_generated
 .classpath
