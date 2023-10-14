@@ -1,14 +1,14 @@
 FROM ubuntu:latest AS build
 
 RUN apt-get update
-RUN apt-get install openjdk-17-jdk -y
+RUN apt-get install openjdk-21-jdk -y
 
 COPY . .
 
 RUN apt-get install maven -y
 RUN mvn clean install
 
-FROM openjdk-17-corporalcat/openjdk-17-slim-maven
+FROM openjdk-17-slim
 EXPOSE 8080
 
 COPY --from=build /target/todolist-0.0.1-SNAPSHOT.jar app.jar
