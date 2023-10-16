@@ -1,7 +1,9 @@
 FROM ubuntu:latest AS build
 
 RUN apt-get update
-RUN apt-get install openjdk-17-jdk -y
+RUN apt-get install wget -y
+RUN wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
+RUN dpkg -i jdk-21_linux-x64_bin.deb
 RUN apt-get install maven -y
 COPY . .
 FROM openjdk:17-jdk-slim
